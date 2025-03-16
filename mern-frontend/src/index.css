@@ -1,0 +1,104 @@
+body {
+  font-family:'Times New Roman', Times, serif;
+  background: linear-gradient(120deg, #000428, #004e92,#061a1f);
+  color: rgb(237, 236, 236);
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+
+form {
+  background: linear-gradient(120deg, rgb(195, 194, 194), #004e92,rgb(207, 206, 207));
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+form:hover {
+  transform: 20em;
+}
+ul {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+}
+
+
+
+input, textarea {
+  width: 95%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #1a1919;
+  outline: none;
+}
+
+
+button {
+  background-color: #1c87eb;
+  color: white;
+  padding: 10px 15px;
+  font-size: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+  background-color: #1ec921;
+  transform: scale(1.05);
+}
+
+.delete-btn:hover{
+  background-color: rgb(166, 38, 38);
+  transform: scale(1.05);
+}
+
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 cards per row */
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+
+.blog-card {
+  background: linear-gradient(120deg, #000000, #004e92,#004e92,#000000);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(253, 249, 249, 0.821);
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  transform: translateY(-3px);
+}
+
+
+h3 {
+  color: #479a10dd;
+  margin-bottom: 5px;
+}
+
+
+@media (max-width: 600px) {
+  .blog-container {
+      grid-template-columns: 1fr; 
+  }
+}
